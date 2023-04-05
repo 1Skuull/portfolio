@@ -7,7 +7,7 @@
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 justify-center items-center gap-1">
             <img src="../assets/html5.svg" title="HTML" alt="HTML">
             <img src="../assets/css3.svg" title="CSS" alt="CSS">
-            <img src="../assets/Javascript.svg" title="Javascript" alt="Javascript">
+            <img src="../assets/javascript.svg" title="Javascript" alt="Javascript">
             <img src="../assets/typescript.svg" title="Typescript" alt="Typescript">
             <img src="../assets/vue.svg" title="Vue.js" alt="Vue.js">
             <img src="../assets/tailwindcss.svg" title="TailwindCSS" alt="TailwindCSS">

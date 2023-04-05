@@ -16,7 +16,7 @@
                     {{ props.descricao }}
                 </p>
                 <a  
-                    href="https://github.com/1Skuull"
+                    :href="link"
                     target="_blank"
                     type="button"
                     class="bg-crimson inline-block rounded bg-primary p-3 text-sm"
@@ -31,6 +31,7 @@
 <script setup lang="ts">
 
 const props =  defineProps({
+    link: String,
     img: String,
     alt: String,
     titulo: String,
