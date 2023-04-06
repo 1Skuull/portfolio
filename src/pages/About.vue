@@ -5,23 +5,22 @@
         
         <div class="about">
             
-            <h1 v-if="!counter.isActive" class="text-xl">
-                Olá! Meu nome é <span class="filtroname text-crimson font-bold text-4xl">Grogu</span>
+            <h1 v-if="!counter.isActive" class="text-2xl">
+                Olá! Meu nome é <span class="filtroname text-crimson font-bold text-4xl">Hudson Junior</span>
             </h1>
-            <h1 v-else class="text-xl">
-                Hello! My name is <span class="filtroname text-crimson font-bold text-4xl">Grogu</span>
+            <h1 v-else class="text-2xl">
+                Hello! My name is <span class="filtroname text-crimson font-bold text-4xl">Hudson Junior</span>
             </h1>
-            
-            <h3 v-if="!counter.isActive" class="text-xl mt-5">
 
-                A empresa em si é uma empresa muito bem sucedida. 
-                Quem eles são será seguido pelo descobridor e pela maior dor, mas abrirei 
-                o assunto facilmente com esta distinção; Ela, por assim dizer?
+            <h3 v-if="!counter.isActive" class="text-lg mt-5">
+                Sou um desenvolvedor front-end que adora criar sites e aplicativos da Web 
+                com forte foco em designs responsivos, desempenho e manutenção futura, usando 
+                as mais recentes tecnologias e melhores práticas de front-end.
             </h3>
-            <h3 v-else class="text-xl mt-5">
-                The company itself is a very successful company. 
-                Who they are will be followed by the discoverer and the greatest pain, but I
-                will easily open the subject with this distinction; She, so to speak?
+            <h3 v-else class="text-lg mt-5">
+                I'm a Frontend Developer who loves to build Web sites & applications with a 
+                strong focus on responsive designs, performance & future maintainability using the 
+                latest frontend technologies & best practices.
             </h3>
             
             <div class="rounded mt-5 flex justify-star items-center gap-2">
@@ -33,14 +32,14 @@
                     <img src="../assets/github.svg" title="Github" alt="Github">
                 </a>
                 
-                <button v-if="!counter.isActive" class="text-xl font-mono hover:text-crimson">Baixar CV</button>
-                <button v-else class="text-xl font-mono hover:text-crimson">Download CV</button>
+                <!-- <button v-if="!counter.isActive" class="text-xl font-mono hover:text-crimson">Baixar CV</button>
+                <button v-else class="text-xl font-mono hover:text-crimson">Download CV</button> -->
             
             </div>
         </div>
         
         <a class="z-10 fixed bottom-4 m-auto" href="#header">
-            <img class="rounded-lg z-10 w-14 h-14 p-1" src="../assets/mouse-scroll.svg" alt="">
+            <img class="rounded-lg z-10 w-12Hudson Junior h-12 p-1" src="../assets/mouse-scroll.svg" alt="">
         </a>
        
         

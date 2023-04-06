@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center">
         <div class="block max-w-sm rounded-lg bg-gray shadow-lg dark:bg-neutral-700">
-            <a class="flex justify-center" href="#!" data-te-ripple-init data-te-ripple-color="light">
+            <a class="flex justify-center" data-te-ripple-init data-te-ripple-color="light">
             <img
                 class="rounded-t-lg"
                 :src="props.img"
