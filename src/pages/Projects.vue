@@ -5,16 +5,18 @@
         
         <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             
-            <Cards v-if="!counter.isActive" img="../src/assets/vue.svg" link="https://portfolio-five-livid.vercel.app" 
+            <Cards v-if="!counter.isActive" img="../assets/portfolio.png" link="portfolio-skuull.vercel.app" 
             alt="Portfolio" titulo="Portfolio" 
             descricao="Portfolio feito Vue.js, Pinia e Typescript" buttao="Veja"/>
-            <Cards v-else img="../src/assets/vue.svg" link="https://portfolio-five-livid.vercel.app" 
+            <Cards v-else img="../assets/portfolio.png" link="portfolio-skuull.vercel.app" 
             alt="Portfolio" titulo="Portfolio" 
-            descricao="Portfolio create with Vue.js, Pinia e Typescript" buttao="Look"/>
+            descricao="Portfolio create with Vue.js, Pinia e Typescript"/>
             
             <!-- <Cards img="../src/assets/typescript.svg" link="https://github.com/1Skuull/portfolio" 
             alt="Site de Filmes" titulo="Site de Filmes" 
-            descricao="Meu primeiro site feito apenas com HTML e CSS" buttao="Veja"/> -->
+            descricao="Meu primeiro site feito apenas com HTML e CSS"/> -->
+            
+            
         
         </div>
     </section>

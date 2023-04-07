@@ -19,10 +19,10 @@
                     :href="link"
                     target="_blank"
                     type="button"
-                    class="bg-crimson inline-block rounded bg-primary p-3 text-sm"
+                    class="hover:bg-crimson inline-block rounded bg-primary p-2 text-sm"
                     data-te-ripple-init
                     data-te-ripple-color="light">
-                    {{ props.buttao }}
+                    <img src="../assets/link.svg" alt="">
                 </a>
             </div>
         </div>
@@ -36,7 +36,13 @@ const props =  defineProps({
     alt: String,
     titulo: String,
     descricao: String,
-    buttao: String
 })
 
 </script>
+<style scoped>
+    a{
+        transition: 800ms;
+    }
+
+
+</style>

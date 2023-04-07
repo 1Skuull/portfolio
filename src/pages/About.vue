@@ -25,7 +25,7 @@
             
             <div class="rounded mt-5 flex justify-star items-center gap-2">
                 
-                <a class="filter flex justify-center" href="https://www.linkedin.com/in/hudson-junior-b98293218/" target="_blank">
+                <a class="filter flex justify-center" href="https://www.linkedin.com/in/devhudsonjunior/" target="_blank">
                     <img src="../assets/linkedin.svg" title="Linkedin" alt="Linkedin">
                 </a>
                 <a class="filter flex justify-center" href="https://github.com/1Skuull" target="_blank">
