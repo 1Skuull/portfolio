@@ -7,19 +7,19 @@
                 :src="props.img"
                 :alt="props.alt" />
             </a>
-            <div class="p-6">
+            <div class="p-5">
                 <h5
                     class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                     {{ props.titulo }}
                 </h5>
-                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                <p class="mb-3 text-base text-neutral-600 dark:text-neutral-200">
                     {{ props.descricao }}
                 </p>
                 <a  
                     :href="link"
                     target="_blank"
                     type="button"
-                    class="hover:bg-crimson inline-block rounded bg-primary p-2 text-sm"
+                    class="hover:bg-crimson inline-block rounded bg-primary p-1 text-sm"
                     data-te-ripple-init
                     data-te-ripple-color="light">
                     <img src="../assets/link.svg" alt="">
