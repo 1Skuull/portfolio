@@ -1,3 +1,3 @@
-# Vue 3 + TypeScript + Vite
+# Feito com Vite + Vue 3 + Pinia + TypeScript  
 
-Teste
+### Teste

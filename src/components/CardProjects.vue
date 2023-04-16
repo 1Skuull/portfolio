@@ -15,8 +15,7 @@
                 <p class="mb-3 text-base text-neutral-600 dark:text-neutral-200">
                     {{ props.descricao }}
                 </p>
-                <a  
-                    :href="link"
+                <a  :href="link"
                     target="_blank"
                     type="button"
                     class="hover:bg-crimson inline-block rounded bg-primary p-1 text-sm"
@@ -30,7 +29,7 @@
 </template>
 <script setup lang="ts">
 
-const props =  defineProps({
+const props = defineProps({
     link: String,
     img: String,
     alt: String,
@@ -43,6 +42,4 @@ const props =  defineProps({
     a{
         transition: 800ms;
     }
-
-
 </style>
