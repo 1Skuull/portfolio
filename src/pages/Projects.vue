@@ -5,10 +5,10 @@
         
         <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             
-            <Cards v-if="!counter.isActive" img="../assets/portfolio.png" link="#" 
+            <Cards v-if="!counter.isActive" img="/assets/portfolio.png" link="#" 
             alt="Portfolio" titulo="Portfolio" 
             descricao="Portfolio feito Vue.js, Pinia e Typescript" buttao="Veja"/>
-            <Cards v-else img="../assets/portfolio.png" link="#" 
+            <Cards v-else img="/assets/portfolio.png" link="#" 
             alt="Portfolio" titulo="Portfolio" 
             descricao="Portfolio create with Vue.js, Pinia e Typescript"/>
             
