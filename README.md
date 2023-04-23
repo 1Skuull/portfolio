@@ -1,3 +1,10 @@
-# Feito com Vite + Vue 3 + Pinia + TypeScript  
+# Tecnologia usadas!
 
-### Teste
+- Vite
+- Vuejs
+- Pinia
+- TypeScript
+- TailwindCSS
+
+
+### Descrição completa em breve!

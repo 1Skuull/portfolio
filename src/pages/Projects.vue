@@ -7,10 +7,10 @@
             
             <Cards v-if="!counter.isActive" imageUrl="portfolio.png" link="#" 
             alt="Portfolio" titulo="Portfolio" 
-            descricao="Portfolio feito Vue.js, Pinia e Typescript" buttao="Veja"/>
+            descricao="Desenvolvido com Vue.js, Pinia, Typescript e TailwindCSS" buttao="Veja"/>
             <Cards v-else imageUrl="portfolio.png" link="#" 
             alt="Portfolio" titulo="Portfolio" 
-            descricao="Portfolio create with Vue.js, Pinia e Typescript"/>
+            descricao="Developed with Vue.js, Pinia, Typescript and TailwindCSS"/>
             
             <!-- <Cards img="../src/assets/typescript.svg" link="https://github.com/1Skuull/portfolio" 
             alt="Site de Filmes" titulo="Site de Filmes" 
