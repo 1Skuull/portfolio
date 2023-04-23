@@ -39,7 +39,7 @@ const props = defineProps({
 })
 
 
-function getImageUrl():string {
+function getImageUrl():any {
   return new URL(`../assets/${props.imageUrl}`, import.meta.url)
 }
 
