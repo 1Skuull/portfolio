@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center ">
+    <div class="flex justify-center shadow-lg">
         <div class="block max-w-sm rounded-lg bg-gray shadow-lg dark:bg-neutral-700">
             <a class="flex justify-center" data-te-ripple-init data-te-ripple-color="light">
                 <img
@@ -28,7 +28,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import {defineProps} from "vue";
+import { defineProps } from "vue";
 
 const props = defineProps({
     link: String,
@@ -39,8 +39,7 @@ const props = defineProps({
 })
 
 
-function getImageUrl():any {
-  // This path must be correct for your file
+function getImageUrl():string {
   return new URL(`../assets/${props.imageUrl}`, import.meta.url)
 }
 
