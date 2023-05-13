@@ -7,4 +7,4 @@
 - TailwindCSS
 
 
-### Descrição completa em breve!
+### Bah
