@@ -12,9 +12,16 @@
             alt="Portfolio" titulo="Portfolio" 
             descricao="Developed with Vue.js, Pinia, Typescript and TailwindCSS"/>
             
-            <!-- <Cards img="../src/assets/typescript.svg" link="https://github.com/1Skuull/portfolio" 
+            <!-- <Cards img="../src/assets/typescript.svg" 
             alt="Site de Filmes" titulo="Site de Filmes" 
             descricao="Meu primeiro site feito apenas com HTML e CSS"/> -->
+
+            <Cards v-if="!counter.isActive" link="https://github.com/1Skuull/grud-prisma" 
+            alt="Grud" titulo="Grud" 
+            descricao="Meu primeiro Grud usando Nodejs, Express e Prisma"/>
+            <Cards v-else link="https://github.com/1Skuull/grud-prisma" 
+            alt="Grud" titulo="Grud" 
+            descricao="My first Grud using Nodejs, Express and Prisma"/>
             
             
         
