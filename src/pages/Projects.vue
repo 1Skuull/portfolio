@@ -18,10 +18,10 @@
 
             <Cards v-if="!counter.isActive" link="https://github.com/1Skuull/grud-prisma" 
             alt="Grud" titulo="Grud" 
-            descricao="Meu primeiro Grud usando Nodejs, Express e Prisma"/>
+            descricao="Meu primeiro Grud usando Typescript, Nodejs, Express e Prisma"/>
             <Cards v-else link="https://github.com/1Skuull/grud-prisma" 
             alt="Grud" titulo="Grud" 
-            descricao="My first Grud using Nodejs, Express and Prisma"/>
+            descricao="My first Grud using Typescript, Nodejs, Express and Prisma"/>
             
             
         
