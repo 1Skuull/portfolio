@@ -1,7 +1,7 @@
 <template>
     <section id="projetos" class="flex items-center flex-col gap-10">
-        <h1 v-if="!counter.isActive">Meus Projetos</h1>
-        <h1 v-else>My Projects</h1>
+        <h1 v-if="!counter.isActive" class="font-semibold">Meus Projetos</h1>
+        <h1 v-else class="font-semibold">My Projects</h1>
         
         <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             

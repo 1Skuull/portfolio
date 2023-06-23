@@ -35,6 +35,10 @@ const counter = useCounterStore()
     }
 
     a{
+        @apply font-semibold
+    }
+
+    a{
         text-decoration: 0;
         color: white;
         font-size: 18px;

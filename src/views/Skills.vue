@@ -1,14 +1,15 @@
 <template>
     <section id="habilidades">
         <header>
-            <h1 v-if="counter.isActive">My Skills</h1>
-            <h1 v-else>Minhas Habilidades</h1>
+            <h1 v-if="counter.isActive" class="font-semibold">My Skills</h1>
+            <h1 v-else class="font-semibold">Minhas Habilidades</h1>
         </header>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 justify-center items-center gap-1">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 justify-center items-center gap-1">
             <img src="../assets/html5.svg" title="HTML5" alt="HTML5">
             <img src="../assets/css3.svg" title="CSS3" alt="CSS3">
             <img src="../assets/javascript.svg" title="Javascript" alt="Javascript">
             <img src="../assets/typescript.svg" title="Typescript" alt="Typescript">
+            <img src="../assets/nodejs.svg" title="Node" alt="Node">
             <img src="../assets/vue.svg" title="Vue.js" alt="Vue.js">
             <img src="../assets/tailwindcss.svg" title="TailwindCSS" alt="TailwindCSS">
         </div>
