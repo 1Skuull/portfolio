@@ -4,7 +4,7 @@
             <h1 v-if="counter.isActive" class="font-semibold">My Skills</h1>
             <h1 v-else class="font-semibold">Minhas Habilidades</h1>
         </header>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 justify-center items-center gap-1">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 justify-center items-center gap-2">
             <img src="../assets/html5.svg" title="HTML5" alt="HTML5">
             <img src="../assets/css3.svg" title="CSS3" alt="CSS3">
             <img src="../assets/javascript.svg" title="Javascript" alt="Javascript">
@@ -42,7 +42,7 @@
         color: gold;
         padding: 10px;
         transition: 1s;
-        border-radius: 3px;
+        border-radius: 8px;
         filter: grayscale(100%);
     }
     img:hover{

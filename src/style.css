@@ -26,18 +26,15 @@
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(108, 108, 108);
   transition: 1s;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: crimson;
 }

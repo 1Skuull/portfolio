@@ -37,7 +37,6 @@
 </script>
 <style scoped>
     section{
-        padding: 20px;
         padding-top: 10px;
         min-height: 95vh;
     }
