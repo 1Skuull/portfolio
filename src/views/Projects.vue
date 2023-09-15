@@ -1,7 +1,7 @@
 <template>
     <section id="projetos" class="flex items-center flex-col gap-10">
         <h1 v-if="!counter.isActive" class="font-semibold">Meus Projetos</h1>
-        <h1 v-else class="font-semibold">My Projects</h1>
+        <h1 v-else class="font-semibold">Projects</h1>
         
         <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             
@@ -18,10 +18,10 @@
 
             <Cards v-if="!counter.isActive" link="https://github.com/1Skuull/grud-prisma" 
             alt="Grud" titulo="Grud" 
-            descricao="Meu primeiro Grud usando Typescript, Nodejs, Express e Prisma"/>
+            descricao="Meu primeiro Grud usando Typescript, Nodejs, Express, Prisma e MySQL"/>
             <Cards v-else link="https://github.com/1Skuull/grud-prisma" 
             alt="Grud" titulo="Grud" 
-            descricao="My first Grud using Typescript, Nodejs, Express and Prisma"/>
+            descricao="My first Grud using Typescript, Nodejs, Express, Prisma and MySQL"/>
             
             
         
