@@ -1,26 +1,24 @@
 <template>
-    <section id="sobre" class="flex justify-center items-start md:items-center flex-col md:flex-row gap-2 px-8">
-        
+    <section id="sobre" class="flex justify-center items-start md:items-center flex-col md:flex-row gap-5 px-8">
         <img class="imgperfil" src="../assets/babyyoda.gif" alt="Grogu">
         
         <div class="about">
-            
             <h1 v-if="!counter.isActive" class="text-2xl">
-                Olá! Meu nome é <span class="filtroname text-crimson font-bold text-4xl">Hudson Junior</span>
+                Olá! Meu nome é <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
             </h1>
             <h1 v-else class="text-2xl">
-                Hello! My name is <span class="filtroname text-crimson font-bold text-4xl">Hudson Junior</span>
+                Hello! My name is <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
             </h1>
 
             <h3 v-if="!counter.isActive" class="text-lg mt-5">
-                Sou um desenvolvedor front-end que adora criar sites e aplicativos da Web 
+                Sou um <span class="font-semibold text-crimson/80">Desenvolvedor Fullstack</span> que adora criar sites e aplicativos da Web 
                 com forte foco em designs responsivos, desempenho e manutenção futura, usando 
-                as mais recentes tecnologias e melhores práticas de front-end.
+                as mais recentes tecnologias e melhores práticas.
             </h3>
             <h3 v-else class="text-lg mt-5">
-                I'm a Frontend Developer who loves to build Web sites & applications with a 
+                I'm a Fullstack Developer who loves to build Web sites & applications with a 
                 strong focus on responsive designs, performance & future maintainability using the 
-                latest frontend technologies & best practices.
+                latest frontend technologies & best.
             </h3>
             
             <div class="rounded mt-5 flex justify-star items-center gap-2">
@@ -32,17 +30,14 @@
                     <img src="../assets/github.svg" title="Github" alt="Github">
                 </a>
                 
-                <!-- <button v-if="!counter.isActive" class="text-xl font-mono hover:text-crimson">Baixar CV</button>
-                <button v-else class="text-xl font-mono hover:text-crimson">Download CV</button> -->
-            
+                <!-- <button v-if="!counter.isActive" class="text-xl font-mono hover:text-gray">Baixar CV</button>
+                <button v-else class="text-xl font-mono hover:text-gray">Download CV</button> -->
             </div>
         </div>
         
         <a class="z-10 fixed bottom-4 m-auto animate-bounce" href="#header">
-            <img class="rounded-lg z-10 w-12Hudson Junior h-12 p-1" src="../assets/mouse-scroll.svg" alt="">
+            <img class="rounded-lg z-10 w-12 h-12 p-1" src="../assets/mouse-scroll.svg" alt="">
         </a>
-       
-        
     </section>
 </template>
 <script setup lang="ts">
@@ -72,18 +67,16 @@ const counter = useCounterStore()
     .about{
         max-width: 700px;
         min-height: 200px;
-        /* background-color: rgb(52, 52, 52); */
     }
     .filter, button{
-        background-color: rgb(22, 22, 22);
-        padding: 8px;
+        padding: 10px;
         transition: 1s;
         border-radius: 3px;
         filter: grayscale(100%);
     }
     .filter:hover, button:hover{
-        background-color: rgb(213, 213, 213);
-        filter: none;
+        background-color: #dbdbdb;
+        filter: grayscale(50%);
     }
 
 </style>

@@ -2,7 +2,7 @@
     <section id="habilidades">
         <header>
             <h1 v-if="counter.isActive" class="font-semibold">Skills</h1>
-            <h1 v-else class="font-semibold">Minhas Habilidades</h1>
+            <h1 v-else class="font-semibold">Habilidades</h1>
         </header>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 justify-center items-center gap-2">
             <img src="../assets/html5.svg" title="HTML5" alt="HTML5">
@@ -46,7 +46,7 @@
         filter: grayscale(100%);
     }
     img:hover{
-        background-color: rgb(213, 213, 213);
-        filter: none;
+        background-color: #dbdbdb;
+        filter: grayscale(60%);
     }
 </style>
