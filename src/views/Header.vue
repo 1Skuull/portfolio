@@ -13,8 +13,8 @@
         
         <button @click="counter.isActive = !counter.isActive">
                 <a :class="{ active: counter.isActive } ">
-                    <img v-if="!counter.isActive" src="../assets/flag-uk.svg" title="Switch to english" alt="Brazil">
-                    <img v-else src="../assets/flag-brazil.svg" title="Switch to portuguese" alt="UK">
+                    <img v-if="counter.isActive" src="../assets/flag-uk.svg" title="Switch to portuguese" alt="Brazil">
+                    <img v-else src="../assets/flag-brazil.svg" title="Switch to english" alt="UK">
                 </a>
         </button>
     

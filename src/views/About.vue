@@ -3,11 +3,11 @@
         <img class="imgperfil" src="../assets/babyyoda.gif" alt="Grogu">
         
         <div class="about">
-            <h1 v-if="!counter.isActive" class="text-2xl">
-                Olá! Meu nome é <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
+            <h1 v-if="!counter.isActive" class="text-2xl font-semibold">
+                Salve! Meu nome é <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
             </h1>
-            <h1 v-else class="text-2xl">
-                Hello! My name is <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
+            <h1 v-else class="text-2xl font-semibold">
+                Hi! My name is <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
             </h1>
 
             <h3 v-if="!counter.isActive" class="text-lg mt-5">
@@ -16,12 +16,12 @@
                 as mais recentes tecnologias e melhores práticas.
             </h3>
             <h3 v-else class="text-lg mt-5">
-                I'm a Fullstack Developer who loves to build Web sites & applications with a 
+                I'm a <span class="font-semibold text-crimson/80">Fullstack Developer</span> who loves to build Web sites & applications with a 
                 strong focus on responsive designs, performance & future maintainability using the 
                 latest frontend technologies & best.
             </h3>
             
-            <div class="rounded mt-5 flex justify-star items-center gap-2">
+            <div class="rounded mt-5 flex justify-start items-center gap-1">
                 
                 <a class="filter flex justify-center" href="https://www.linkedin.com/in/devhudsonjunior/" target="_blank">
                     <img src="../assets/linkedin.svg" title="Linkedin" alt="Linkedin">
@@ -57,10 +57,11 @@ const counter = useCounterStore()
         filter: grayscale(100%);
         transition: 1s;
     }
-    .filtroname::selection {
-        background: #dc143c;
-        color: rgb(213, 213, 213);
-    }
+    /* .filtroname{
+        background: linear-gradient( 15deg, #dc143c 65%, #dc143c 30% );
+        filter: blur(72px);
+        transform: translate(-50%, -10%);
+    } */
     .imgperfil:hover{
         filter: none;
     }

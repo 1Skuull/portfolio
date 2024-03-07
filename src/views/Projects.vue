@@ -12,10 +12,6 @@
             alt="Portfolio" titulo="Portfolio" 
             descricao="Developed with Vue.js, Pinia, Typescript and TailwindCSS"/>
             
-            <!-- <Cards img="../src/assets/typescript.svg" 
-            alt="Site de Filmes" titulo="Site de Filmes" 
-            descricao="Meu primeiro site feito apenas com HTML e CSS"/> -->
-
             <Cards v-if="!counter.isActive" link="https://github.com/1Skuull/grud-prisma" 
             alt="Grud" titulo="Grud" 
             descricao="Meu primeiro Grud usando Typescript, Nodejs, Express, Prisma e MySQL"/>
@@ -23,15 +19,12 @@
             alt="Grud" titulo="Grud" 
             descricao="My first Grud using Typescript, Nodejs, Express, Prisma and MySQL"/>
 
-
             <Cards v-if="!counter.isActive" link="https://site-de-filmes-sigma.vercel.app" 
             alt="Site de Filmes" titulo="Site de Filmes" 
             descricao="Desenvolvido com Vue.js, Pinia, Typescript e SCSS"/>
             <Cards v-else link="https://site-de-filmes-sigma.vercel.app" 
             alt="Site de Filmes" titulo="Site de Filmes" 
             descricao="Developed with Vue.js, Pinia, Typescript and SCSS"/>
-            
-            
         
         </div>
     </section>
@@ -40,8 +33,6 @@
     import Cards from "../components/CardProjects.vue"
     import useCounterStore from "../stores/conta"
     const counter = useCounterStore()
-
-
 </script>
 <style scoped>
     section{
@@ -51,5 +42,4 @@
     h1{
         font-size: 30px;
     }
-
 </style>
