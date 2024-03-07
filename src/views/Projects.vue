@@ -7,7 +7,7 @@
             
             <Cards v-if="!counter.isActive" imageUrl="portfolio.png" link="https://github.com/1Skuull/portfolio" 
             alt="Portfolio" titulo="Portfolio" 
-            descricao="Desenvolvido com Vue.js, Pinia, Typescript e TailwindCSS" buttao="Veja"/>
+            descricao="Desenvolvido com Vue.js, Pinia, Typescript e TailwindCSS"/>
             <Cards v-else imageUrl="portfolio.png" link="https://github.com/1Skuull/portfolio" 
             alt="Portfolio" titulo="Portfolio" 
             descricao="Developed with Vue.js, Pinia, Typescript and TailwindCSS"/>
@@ -22,6 +22,14 @@
             <Cards v-else link="https://github.com/1Skuull/grud-prisma" 
             alt="Grud" titulo="Grud" 
             descricao="My first Grud using Typescript, Nodejs, Express, Prisma and MySQL"/>
+
+
+            <Cards v-if="!counter.isActive" link="https://site-de-filmes-sigma.vercel.app" 
+            alt="Site de Filmes" titulo="Site de Filmes" 
+            descricao="Desenvolvido com Vue.js, Pinia, Typescript e SCSS"/>
+            <Cards v-else link="https://site-de-filmes-sigma.vercel.app" 
+            alt="Site de Filmes" titulo="Site de Filmes" 
+            descricao="Developed with Vue.js, Pinia, Typescript and SCSS"/>
             
             
         

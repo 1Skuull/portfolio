@@ -22,7 +22,7 @@ import Footer from "./views/Footer.vue"
 </script>
 <style scoped>
   .container{
-    max-width: 1024px;
+    max-width: 1224px;
     margin: 0 auto;
   }
   
