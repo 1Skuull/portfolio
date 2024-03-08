@@ -1,17 +1,17 @@
 <template>
     <header id="header">
-        <nav v-if="counter.isActive" class="flex items-center gap-4">
+        <nav v-if="counter.isActive" class="flex items-center gap-4 ml-1">
             <a href="#header">About</a>
             <a href="#habilidades">Skills</a>
             <a href="#projetos">Projects</a>
         </nav>
-        <nav v-else class="flex items-center gap-4">
+        <nav v-else class="flex items-center gap-4 ml-1">
             <a href="#header">Sobre</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#projetos">Projetos</a>
         </nav>
         
-        <button @click="counter.isActive = !counter.isActive">
+        <button @click="counter.isActive = !counter.isActive" class="mr-1">
                 <a :class="{ active: counter.isActive } ">
                     <img v-if="counter.isActive" src="../assets/flag-uk.svg" title="Switch to portuguese" alt="Brazil">
                     <img v-else src="../assets/flag-brazil.svg" title="Switch to english" alt="UK">
@@ -51,7 +51,7 @@ const counter = useCounterStore()
         background-color: #dc143ccc;
     }
     .active{
-        border-bottom: 2px solid crimson;
+        border-bottom: 2px solid #dc143ccc;
     }
 
 </style>

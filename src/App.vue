@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container animate__animated animate__fadeIn">
     
     <Header />
-    <main>
+    <main class="">
       <About />
       <Skills />
       <Projects />

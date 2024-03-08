@@ -10,9 +10,10 @@
 </script>
 <style scoped>
     p{
-        font-size: 16px;
-        font-weight: bold;
+      font-size: 16px;
+      font-weight: bold;
     }
+    
     .vue-style:hover{
       background: -webkit-linear-gradient( 120deg, #35495e -80%, #41b883 );
       -webkit-background-clip: text;

@@ -35,7 +35,7 @@
             </div>
         </div>
         
-        <a class="z-10 fixed bottom-4 m-auto animate-bounce" href="#header">
+        <a class="z-10 fixed bottom-4 m-auto" href="#header">
             <img class="rounded-lg z-10 w-12 h-12 p-1" src="../assets/mouse-scroll.svg" alt="">
         </a>
     </section>
