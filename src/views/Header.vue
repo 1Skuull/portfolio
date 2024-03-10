@@ -17,13 +17,12 @@
                     <img v-else src="../assets/flag-brazil.svg" title="Switch to english" alt="UK">
                 </a>
         </button>
-    
+            
     </header>
 </template>
 <script setup lang="ts">
 import useCounterStore from "../stores/conta"
 const counter = useCounterStore()
-
 </script>
 <style scoped>
     header{

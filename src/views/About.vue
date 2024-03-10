@@ -10,13 +10,14 @@
                 Hi! My name is <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
             </h1>
 
+
             <h3 v-if="!counter.isActive" class="text-lg mt-5">
-                Sou um <span class="font-semibold text-crimson/80">Desenvolvedor Fullstack</span> que adora criar sites e aplicativos da Web 
+                Sou um <span class="filtroname font-semibold text-crimson/80">Desenvolvedor Fullstack</span> que adora criar sites e aplicativos da Web 
                 com forte foco em designs responsivos, desempenho e manutenção futura, usando 
                 as mais recentes tecnologias e melhores práticas.
             </h3>
             <h3 v-else class="text-lg mt-5">
-                I'm a <span class="font-semibold text-crimson/80">Fullstack Developer</span> who loves to build Web sites & applications with a 
+                I'm a <span class="filtroname font-semibold text-crimson/80">Fullstack Developer</span> who loves to build Web sites & applications with a 
                 strong focus on responsive designs, performance & future maintainability using the 
                 latest frontend technologies & best.
             </h3>
@@ -30,8 +31,8 @@
                     <img src="../assets/github.svg" title="Github" alt="Github">
                 </a>
                 
-                <!-- <button v-if="!counter.isActive" class="text-xl font-mono hover:text-gray">Baixar CV</button>
-                <button v-else class="text-xl font-mono hover:text-gray">Download CV</button> -->
+                <!-- <button v-if="!counter.isActive" class="text-lg hover:text-gray">Baixar CV</button>
+                <button v-else class="text-lg hover:text-gray">Download CV</button> -->
             </div>
         </div>
         
@@ -41,11 +42,8 @@
     </section>
 </template>
 <script setup lang="ts">
-
 import useCounterStore from "../stores/conta"
 const counter = useCounterStore()
-
-
 </script>
 <style scoped>
     #sobre{min-height: 95vh;}
@@ -57,27 +55,30 @@ const counter = useCounterStore()
         filter: grayscale(100%);
         transition: 1s;
     }
-    /* .filtroname{
-        background: linear-gradient( 15deg, #dc143c 65%, #dc143c 30% );
-        filter: blur(72px);
-        transform: translate(-50%, -10%);
-    } */
+    
     .imgperfil:hover{
         filter: none;
     }
+    
     .about{
         max-width: 700px;
         min-height: 200px;
     }
+    
     .filter, button{
         padding: 10px;
         transition: 1s;
         border-radius: 3px;
         filter: grayscale(100%);
     }
+    
     .filter:hover, button:hover{
         background-color: #dbdbdb;
         filter: grayscale(50%);
     }
 
+    .filtroname::selection {
+        background: #dc143ccc;
+        color: #dbdbdb;
+    }
 </style>

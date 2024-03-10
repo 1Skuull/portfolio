@@ -1,7 +1,7 @@
 <template>
     <footer class="flex justify-star ml-1">
         <p v-if="!counter.isActive" >Desenvolvido com <span class="vue-style">Vue.js</span>, <span class="pinia-style">Pinia</span>, Typescript e TailwindCSS</p>
-        <p v-else>Developed with <span class="vue-style">Vue.js</span>, <span class="pinia-style">Pinia</span>, Typescript and TailwindCSS</p>
+        <p v-else>Built with <span class="vue-style">Vue.js</span>, <span class="pinia-style">Pinia</span>, Typescript & TailwindCSS</p>
     </footer>
 </template>
 <script setup lang="ts">
