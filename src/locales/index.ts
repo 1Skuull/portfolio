@@ -5,6 +5,7 @@ import pt from "./pt.json"
 const messages = { en, pt }
 
 export const i18n = createI18n({
+    legacy: false,
     locale: 'pt', // set locale
     fallbackLocale: 'en', // set fallback locale
     messages, // set locale messages

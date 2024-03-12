@@ -1,4 +1,32 @@
-{    
-    "presentation": "Salve! Meu nome é",
-    "about": "Sou um Desenvolvedor Fullstack que adora criar sites e aplicativos da Web com forte foco em designs responsivos, desempenho e manutenção futura, usando as mais recentes tecnologias e melhores práticas." 
+{
+    "header": {
+        "about": "Sobre",
+        "skills": "Habilidade",
+        "projects": "Projetos"
+    },
+    "about": {    
+        "presentation": "Salve! Meu nome é",
+        "text": "Sou um Desenvolvedor Fullstack que adora criar sites e aplicativos da Web com forte foco em designs responsivos, desempenho e manutenção futura, usando as mais recentes tecnologias e melhores práticas." 
+    },
+    "skills": "Habilidades",
+    "projects": {
+        "title": "Projetos",
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "Desenvolvido com Vue.js, Typescript e TailwindCSS"
+        },
+        "grud": {
+            "title": "Grud",
+            "description": "Meu primeiro Grud usando Typescript, Nodejs, Express, Prisma e MySQL"
+        },
+        "movieWebsite": {
+            "title": "Site de filmes",
+            "description": "Desenvolvido com Vue.js, Pinia, Typescript e SCSS"
+        }
+    },
+    "footer": {
+        "start": "Desenvolvido com",
+        "end": "e"
+    }
 }
+

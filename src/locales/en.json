@@ -1,4 +1,31 @@
-{    
-    "presentation": "Hi! My name is",
-    "about": " I'm a Fullstack Developer who loves to build Web sites & applications with a strong focus on responsive designs, performance & future maintainability using the latest frontend technologies & best." 
+{
+    "header": {
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects"
+    },
+    "about": {    
+        "presentation": "Hi! My name is",
+        "text": " I'm a Fullstack Developer who loves to build Web sites & applications with a strong focus on responsive designs, performance & future maintainability using the latest frontend technologies & best." 
+    },
+    "skills": "Skills",
+    "projects": {
+        "title": "Projetos",
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "Built with Vue.js, Typescript and TailwindCSS"
+        },
+        "grud": {
+            "title": "Grud",
+            "description": "My first Grud using Typescript, Nodejs, Express, Prisma and MySQL"
+        },
+        "movieWebsite": {
+            "title": "Movie website",
+            "description": "Built with Vue.js, Pinia, Typescript and SCSS"
+        }
+    },
+    "footer": {
+        "start": "Built with",
+        "end": "&"
+    }
 }

@@ -1,31 +1,29 @@
 <template>
-    <footer class="flex justify-star ml-1">
-        <p v-if="!counter.isActive" >Desenvolvido com <span class="vue-style">Vue.js</span>, <span class="pinia-style">Pinia</span>, Typescript e TailwindCSS</p>
-        <p v-else>Built with <span class="vue-style">Vue.js</span>, <span class="pinia-style">Pinia</span>, Typescript & TailwindCSS</p>
-    </footer>
+  <footer class="flex justify-star ml-1">
+    <p>{{ $t("footer.start") }} <span class="vue-style">Vue.js</span>,
+      Typescript {{ $t("footer.end") }} TailwindCSS</p>
+  </footer>
 </template>
 <script setup lang="ts">
-  import useCounterStore from "../stores/conta"
-  const counter = useCounterStore()
+
 </script>
 <style scoped>
-    p{
-      font-size: 16px;
-      font-weight: bold;
-    }
-    
-    .vue-style:hover{
-      background: -webkit-linear-gradient( 120deg, #35495e -80%, #41b883 );
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+p {
+  font-size: 16px;
+  font-weight: bold;
+}
 
-    .pinia-style:hover{
-      background: -webkit-linear-gradient( 78deg, #f7d336 30%, #8ae99c );
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+.vue-style:hover {
+  background: -webkit-linear-gradient(120deg, #35495e -80%, #41b883);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-</style>
+.pinia-style:hover {
+  background: -webkit-linear-gradient(78deg, #f7d336 30%, #8ae99c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>../stores/changeLang

@@ -1,28 +1,27 @@
 <template>
     <header id="header">
-        <nav v-if="counter.isActive" class="flex items-center gap-4 ml-1">
-            <a href="#header">About</a>
-            <a href="#habilidades">Skills</a>
-            <a href="#projetos">Projects</a>
-        </nav>
-        <nav v-else class="flex items-center gap-4 ml-1">
-            <a href="#header">Sobre</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
+        <nav class="flex items-center gap-1 ml-1">
+            <a href="#header">{{ $t("header.about") }}</a>
+            <a href="#habilidades">{{ $t("header.skills") }}</a>
+            <a href="#projetos">{{ $t("header.projects") }}</a>
         </nav>
         
-        <button @click="counter.isActive = !counter.isActive" class="mr-1">
-                <a :class="{ active: counter.isActive } ">
-                    <img v-if="counter.isActive" src="../assets/flag-uk.svg" title="Switch to portuguese" alt="Brazil">
-                    <img v-else src="../assets/flag-brazil.svg" title="Switch to english" alt="UK">
-                </a>
+        <button @click="changeLang" class="button-flag mr-1">
+             <a >
+                <img v-if="locale == 'en'" src="../assets/flag-uk.svg" title="Switch to portuguese" alt="Brazil">
+                <img v-else src="../assets/flag-brazil.svg" title="Switch to english" alt="UK">
+            </a>
         </button>
-            
+       
     </header>
 </template>
 <script setup lang="ts">
-import useCounterStore from "../stores/conta"
-const counter = useCounterStore()
+import { useI18n } from "vue-i18n"
+
+const { locale } = useI18n({ useScope: 'global' })
+
+const changeLang = () => locale.value == 'pt' ?  locale.value = 'en' : locale.value = 'pt';
+
 </script>
 <style scoped>
     header{
@@ -31,26 +30,30 @@ const counter = useCounterStore()
         justify-content: space-between;
         align-items: center;
     }
-    a{
+   
+    nav > a{
         text-decoration: 0;
         font-size: 18px;
         transition: 800ms;
         font-weight: bold;
-        /* border-radius: 3px;
+        border-radius: 3px;
         padding-left: 10px;
-        padding-right: 10px; */
+        padding-right: 10px;
     }
-    button{
-        filter: grayscale(100%);
-    }
-    button:hover{
-        filter: grayscale(50%)
-    }
-    a:hover{
+    
+    nav > a:hover{
         background-color: #dc143ccc;
     }
-    .active{
-        border-bottom: 2px solid #dc143ccc;
+    
+    .button-flag{
+        filter: grayscale(100%);
     }
+    .button-flag:hover{
+        filter: grayscale(50%)
+    }
+    
+    /* .active{
+        border-bottom: 2px solid #dc143ccc;
+    } */
 
-</style>
+</style>../stores/changeLang

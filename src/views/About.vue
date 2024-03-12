@@ -3,27 +3,17 @@
         <img class="imgperfil" src="../assets/babyyoda.gif" alt="Grogu">
         
         <div class="about">
-            <h1 v-if="!counter.isActive" class="text-2xl font-semibold">
-                Salve! Meu nome é <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
-            </h1>
-            <h1 v-else class="text-2xl font-semibold">
-                Hi! My name is <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
+            <h1 class="text-2xl font-semibold">
+                {{ $t("about.presentation") }} <span class="filtroname text-crimson/80 font-bold text-4xl">Hudson Junior</span>
             </h1>
 
-
-            <h3 v-if="!counter.isActive" class="text-lg mt-5">
-                Sou um <span class="filtroname font-semibold text-crimson/80">Desenvolvedor Fullstack</span> que adora criar sites e aplicativos da Web 
-                com forte foco em designs responsivos, desempenho e manutenção futura, usando 
-                as mais recentes tecnologias e melhores práticas.
-            </h3>
-            <h3 v-else class="text-lg mt-5">
-                I'm a <span class="filtroname font-semibold text-crimson/80">Fullstack Developer</span> who loves to build Web sites & applications with a 
-                strong focus on responsive designs, performance & future maintainability using the 
-                latest frontend technologies & best.
+            <h3 class="text-lg mt-5">
+                {{ $t("about.text") }}
             </h3>
             
+            <!-- <span class="filtroname font-semibold text-crimson/80">Desenvolvedor Fullstack</span> -->
+            
             <div class="rounded mt-5 flex justify-start items-center gap-1">
-                
                 <a class="filter flex justify-center" href="https://www.linkedin.com/in/devhudsonjunior/" target="_blank">
                     <img src="../assets/linkedin.svg" title="Linkedin" alt="Linkedin">
                 </a>
@@ -31,9 +21,14 @@
                     <img src="../assets/github.svg" title="Github" alt="Github">
                 </a>
                 
-                <!-- <button v-if="!counter.isActive" class="text-lg hover:text-gray">Baixar CV</button>
+                <!-- <a class="filter flex justify-center" href="" target="_blank">
+                    <img src="../assets/whatsapp.svg" title="Whatsapp" alt="Whatsapp">
+                </a>
+                
+                <button v-if="!counter.isActive" class="text-lg hover:text-gray">Baixar CV</button>
                 <button v-else class="text-lg hover:text-gray">Download CV</button> -->
             </div>
+        
         </div>
         
         <a class="z-10 fixed bottom-4 m-auto" href="#header">
@@ -42,11 +37,10 @@
     </section>
 </template>
 <script setup lang="ts">
-import useCounterStore from "../stores/conta"
-const counter = useCounterStore()
+
 </script>
 <style scoped>
-    #sobre{min-height: 95vh;}
+    #sobre{ min-height: 95vh; }
     .imgperfil{
         width: 300px;
         height: 350px;
@@ -81,4 +75,4 @@ const counter = useCounterStore()
         background: #dc143ccc;
         color: #dbdbdb;
     }
-</style>
+</style>../stores/changeLang

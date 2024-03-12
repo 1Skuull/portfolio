@@ -14,11 +14,9 @@
 </template>
 <script setup lang="ts">
 import { defineProps } from "vue";
-import 'animate.css';
 
 const props = defineProps({
     link: String,
-    imageUrl: String,
     alt: String,
     titulo: String,
     descricao: String

@@ -1,8 +1,7 @@
 <template>
     <section id="habilidades">
         <header>
-            <h1 v-if="counter.isActive" class="font-semibold">Skills</h1>
-            <h1 v-else class="font-semibold">Habilidades</h1>
+            <h1 class="font-semibold">{{ $t("skills") }}</h1>
         </header>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 justify-center items-center gap-2">
             <img class="shadow-xl" src="../assets/html5.svg" title="HTML5" alt="HTML5">
@@ -18,8 +17,7 @@
     </section>
 </template>
 <script setup lang="ts">
-    import useCounterStore from "../stores/conta"
-    const counter = useCounterStore()
+ 
 </script>
 <style scoped>
     section{
@@ -49,4 +47,4 @@
         background-color: #dbdbdb;
         filter: grayscale(60%);
     }
-</style>
+</style>../stores/changeLang
