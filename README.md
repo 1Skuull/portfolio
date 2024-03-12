@@ -2,7 +2,6 @@
 
 - Vite
 - Vuejs
-- Pinia
 - TypeScript
 - TailwindCSS
 

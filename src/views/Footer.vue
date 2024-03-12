@@ -19,11 +19,4 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.pinia-style:hover {
-  background: -webkit-linear-gradient(78deg, #f7d336 30%, #8ae99c);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 </style>../stores/changeLang
