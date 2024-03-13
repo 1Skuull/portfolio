@@ -6,12 +6,12 @@
             <a href="#projetos">{{ $t("header.projects") }}</a>
         </nav>
         
-        <button @click="changeLang" class="button-flag mr-1">
-             <a >
+        <div>
+            <button @click="changeLang" class="button-flag mr-1 flex ">
                 <img v-if="locale == 'en'" src="../assets/flag-uk.svg" title="Switch to portuguese" alt="Brazil">
                 <img v-else src="../assets/flag-brazil.svg" title="Switch to english" alt="UK">
-            </a>
-        </button>
+            </button>
+        </div>
        
     </header>
 </template>
@@ -25,7 +25,7 @@ const changeLang = () => locale.value == 'pt' ?  locale.value = 'en' : locale.va
 </script>
 <style scoped>
     header{
-        padding: 5px 0;
+        height: 45px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -43,6 +43,7 @@ const changeLang = () => locale.value == 'pt' ?  locale.value = 'en' : locale.va
     
     nav > a:hover{
         background-color: #dc143ccc;
+        
     }
     
     .button-flag{

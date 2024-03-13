@@ -19,4 +19,4 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-</style>../stores/changeLang
+</style>

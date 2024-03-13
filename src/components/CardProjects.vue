@@ -5,7 +5,7 @@
                 <h5 class="text-2xl font-semibold">
                     {{ props.titulo }}
                 </h5>
-                <p class="font-normal">
+                <p class="font-normal text-sm">
                     {{ props.descricao }}
                 </p>
             </div>
