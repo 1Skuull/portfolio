@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-start items-center rounded-lg bg-gray shadow-xl">
-        <a :href="link" target="_blank" class="rounded-lg hover:bg-white/80 hover:text-gray">
+        <a :href="link" target="_blank" class="rounded-lg hover:bg-white/80 hover:text-gray w-[336px] h-[112px]">
             <div class="px-4 py-5">
                 <h5 class="text-2xl font-semibold">
                     {{ props.titulo }}

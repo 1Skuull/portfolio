@@ -18,6 +18,10 @@
             <Cards link="https://site-de-filmes-sigma.vercel.app" 
             :titulo="$t('projects.movieWebsite.title')" 
             :descricao="$t('projects.movieWebsite.description')"/>
+
+            <Cards link="https://site-de-ofertas.vercel.app/" 
+            :titulo="$t('projects.offersWebsite.title')" 
+            :descricao="$t('projects.offersWebsite.description')"/>
         
         </div>
     </section>

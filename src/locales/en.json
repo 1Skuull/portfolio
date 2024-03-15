@@ -22,6 +22,10 @@
         "movieWebsite": {
             "title": "Movie website",
             "description": "Built with Vue.js, Pinia, Typescript and SCSS"
+        },
+        "offersWebsite": {
+            "title": "Offers website",
+            "description": "Built with Vue.js, Pinia and Typescript"
         }
     },
     "footer": {

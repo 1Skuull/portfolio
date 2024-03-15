@@ -22,6 +22,10 @@
         "movieWebsite": {
             "title": "Site de filmes",
             "description": "Desenvolvido com Vue.js, Pinia, Typescript e SCSS"
+        },
+        "offersWebsite": {
+            "title": "Site de Ofertas",
+            "description": "Desenvolvido com Vue.js, Pinia, Typescript"
         }
     },
     "footer": {
