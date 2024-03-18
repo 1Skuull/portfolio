@@ -10,7 +10,7 @@
     },
     "skills": "Skills",
     "projects": {
-        "title": "Projetos",
+        "title": "Projects",
         "portfolio": {
             "title": "Portfolio",
             "description": "Built with Vue.js, Typescript and TailwindCSS"
