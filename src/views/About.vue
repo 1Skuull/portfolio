@@ -10,9 +10,11 @@
             <h3 class="text-lg mt-5">
                 {{ $t("about.text") }}
             </h3>
-            
-            <!-- <span class="filtroname font-semibold text-crimson/80">Desenvolvedor Fullstack</span> -->
-            
+           
+            <h1 class="filtroname bg-crimson/80 font-bold text-xl mt-4 px-1 w-max animate__animated animate__pulse animate__repeat-2">
+                <span class="text-white/80 ">{{ $t("about.alert") }}</span>
+            </h1>
+
             <div class="rounded mt-5 flex justify-start items-center gap-1">
                 <a class="filter flex justify-center" href="https://www.linkedin.com/in/devhudsonjunior/" target="_blank">
                     <img src="../assets/linkedin.svg" title="Linkedin" alt="Linkedin">
@@ -23,11 +25,13 @@
                 
                 <!-- <a class="filter flex justify-center" href="" target="_blank">
                     <img src="../assets/whatsapp.svg" title="Whatsapp" alt="Whatsapp">
-                </a>
+                </a> -->
                 
-                <button v-if="!counter.isActive" class="text-lg hover:text-gray">Baixar CV</button>
-                <button v-else class="text-lg hover:text-gray">Download CV</button> -->
+                <!-- <button class="text-lg font-semibold hover:text-gray">{{ $t("about.downloadcv") }}</button> -->
             </div>
+
+            
+
         
         </div>
         
@@ -37,10 +41,14 @@
     </section>
 </template>
 <script setup lang="ts">
+import 'animate.css';
 
 </script>
 <style scoped>
-    #sobre{ min-height: 95vh; }
+    #sobre{ 
+        min-height: 95vh; 
+    }
+    
     .imgperfil{
         width: 300px;
         height: 350px;

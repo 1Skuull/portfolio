@@ -1,7 +1,10 @@
 <template>
-  <footer class="flex justify-star ml-1">
+  <footer class="flex justify-between items-center justify-star ml-1">
     <p>{{ $t("footer.start") }} <span class="vue-style">Vue.js</span>,
       Typescript {{ $t("footer.end") }} TailwindCSS</p>
+
+
+    <a href="https://www.youtube.com/watch?v=abR--H5EzZg&t=117s" target="_blank"></a>
   </footer>
 </template>
 <script setup lang="ts">
@@ -18,5 +21,23 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+a {
+  background-color: #dc143cc5;
+  /*color: #dc143cc5;
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: none;
+  transition: 1s; */
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #ffffffdc;
+  /* color: #ffffffdc; */
 }
 </style>
