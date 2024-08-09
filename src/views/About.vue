@@ -8,12 +8,12 @@
             </h1>
 
             <h3 class="text-lg mt-5">
-                {{ $t("about.text") }}
+                <span class="alertText">{{ $t("about.text") }}</span>
             </h3>
-           
-            <h1 class="filtroname bg-crimson/80 font-bold text-xl mt-4 px-1 w-max animate__animated animate__pulse animate__repeat-2">
-                <span class="text-white/80 ">{{ $t("about.alert") }}</span>
-            </h1>
+            
+            <div class="filtroname bg-crimson/80 font-bold text-xl mt-4 px-1 w-max" title="Eu tentei!">
+                <a class="text-white/80" href="https://youtu.be/abR--H5EzZg?t=190" target="_blank">{{ $t("about.alert") }}</a>
+            </div>
 
             <div class="rounded mt-5 flex justify-start items-center gap-1">
                 <a class="filter flex justify-center" href="https://www.linkedin.com/in/devhudsonjunior/" target="_blank">
@@ -29,14 +29,10 @@
                 
                 <!-- <button class="text-lg font-semibold hover:text-gray">{{ $t("about.downloadcv") }}</button> -->
             </div>
-
-            
-
-        
         </div>
         
-        <a class="z-10 fixed bottom-4 m-auto" href="#header">
-            <img class="rounded-lg z-10 w-12 h-12 p-1" src="../assets/mouse-scroll.svg" alt="">
+        <a class="z-10 fixed bottom-4" href="#header">
+            <img class=" z-10 w-12 h-12 p-1" src="../assets/mouse-scroll.svg" alt="">
         </a>
     </section>
 </template>
@@ -82,5 +78,10 @@ import 'animate.css';
     .filtroname::selection {
         background: #dc143ccc;
         color: #dbdbdb;
+    }
+    
+    .alertText::selection {
+        background: #dbdbdb;
+        color: #dc143ccc;
     }
 </style>../stores/changeLang

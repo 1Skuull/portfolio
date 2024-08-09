@@ -3,7 +3,7 @@
         <header>
             <h1 class="font-semibold">{{ $t("skills") }}</h1>
         </header>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 justify-center items-center gap-2">
+        <div class="flex flex-wrap justify-center items-center gap-1">
             <img class="shadow-xl" src="../assets/html5.svg" title="HTML5" alt="HTML5">
             <img class="shadow-xl" src="../assets/css3.svg" title="CSS3" alt="CSS3">
             <img class="shadow-xl" src="../assets/javascript.svg" title="Javascript" alt="Javascript">
@@ -14,7 +14,7 @@
         </div>
         <div>
         </div>
-    </section>
+     </section><!--grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 -->
 </template>
 <script setup lang="ts">
  
@@ -38,6 +38,8 @@
     img{
         background-color: #161616;
         color: gold;
+        width: 140px;
+        height: 140px;
         padding: 10px;
         transition: 1s;
         border-radius: 8px;
@@ -47,4 +49,5 @@
         background-color: #dbdbdb;
         filter: grayscale(60%);
     }
+
 </style>../stores/changeLang

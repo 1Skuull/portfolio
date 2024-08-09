@@ -4,12 +4,9 @@
       Typescript {{ $t("footer.end") }} TailwindCSS</p>
 
 
-    <a href="https://www.youtube.com/watch?v=abR--H5EzZg&t=117s" target="_blank"></a>
+    <a href="https://youtu.be/hFNA8UE-VkE&t=74" target="_blank" title="faz o L"></a>
   </footer>
 </template>
-<script setup lang="ts">
-
-</script>
 <style scoped>
 p {
   font-size: 16px;

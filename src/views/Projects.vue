@@ -2,8 +2,7 @@
     <section id="projetos" class="flex items-center flex-col gap-10">
         <h1 class="font-semibold">{{ $t("projects.title") }}</h1>
         
-        
-        <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div class="flex flex-wrap gap-1 lg:justify-start justify-center">
             
             <Cards link="https://github.com/1Skuull/portfolio" 
             :titulo="$t('projects.portfolio.title')" 
@@ -22,9 +21,10 @@
             <Cards link="https://site-de-ofertas.vercel.app/" 
             :titulo="$t('projects.offersWebsite.title')" 
             :descricao="$t('projects.offersWebsite.description')"/>
+
         
         </div>
-    </section>
+    </section> <!--grid-cols-1 sm:grid-cols-2 md:grid-cols-3 -->
 </template>
 <script setup lang="ts">
 import Cards from '../components/CardProjects.vue';
