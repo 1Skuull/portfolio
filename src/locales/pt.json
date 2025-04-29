@@ -5,10 +5,10 @@
         "projects": "Projetos"
     },
     "about": {    
-        "presentation": "Salve! Meu nome é",
+        "presentation": "Oba! Meu nome é",
         "text": "Sou um Desenvolvedor Fullstack que adora criar sites e aplicativos da Web com forte foco em designs responsivos, desempenho e manutenção futura, usando as mais recentes tecnologias e melhores práticas.", 
         "downloadcv": "Baixar CV",
-        "alert": "Aposentado da programação"
+        "alert": "Aposentado"
     },
     "skills": "Habilidades",
     "projects": {

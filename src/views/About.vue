@@ -50,7 +50,7 @@ import 'animate.css';
         height: 350px;
         background-color: rgb(52, 52, 52);
         border-radius: 4px;
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
         transition: 1s;
     }
     
